@@ -13,14 +13,19 @@ header {
     height: 50px;
 }
 
+.flex {
+    display: flex;
+}
+
 /*----------------------SECTIONS-----------------------*/
 .row {
     margin: 0 auto;
-    padding: 20px 20%;
+    padding: 0 20%;
     height: 300px;
     display: flex;
 }
 
+/*---------------------colored rows-------------------------*/
 .blue {
     background-color: rgb(37, 37, 204);
 }
@@ -33,11 +38,13 @@ header {
     background-color: lightgrey;
 }
 
+/*-------------------colored sections-----------------------*/
 .lilla-section {
     background-color: rgb(192, 75, 139);
     width: 600px;
     margin: 0 auto;
     height: 90%;
+    display:flex;
 }
 
 .pink-section {
