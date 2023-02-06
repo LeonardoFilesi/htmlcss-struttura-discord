@@ -1,6 +1,6 @@
 /*RESET*/
 * {
-    background-color: antiquewhite;
+    background-color: rgb(177, 108, 18);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,20 +35,27 @@ header {
 
 .lilla-section {
     background-color: rgb(192, 75, 139);
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     height: 90%;
 }
 
 .pink-section {
     height: 90%;
-    background-color: pink;
-    width: 33%;
+    background-color: rgb(250, 143, 161);
+    width: 40%;
     display:flex;
 }
 .blue-section {
     height: 90%;
-    background-color: blue;
-    width: 67%;
+    background-color: rgb(49, 49, 255);
+    width: 60%;
+    display:flex;
+}
+
+.green-section {
+    height: 90%;
+    background-color: rgb(35, 104, 56);
+    width: 100%;
     display:flex;
 }
