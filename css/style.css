@@ -141,7 +141,7 @@ header {
     padding: 20px 20% 0px;
     min-height: 100px;
     display: flex;
-    border-top 2px white;
+    border-top: 2px white;
 }
 
 .dark2 {
