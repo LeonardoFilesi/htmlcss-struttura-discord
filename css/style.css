@@ -90,7 +90,7 @@ header {
 
 
 .lilla-section {
-    background-color: rgb(192, 75, 139);
+    backgrolor: rgb(192, 75, 139);
 /*------------------debug------------------*/
     margin: 0 auto;
     display:flex;
