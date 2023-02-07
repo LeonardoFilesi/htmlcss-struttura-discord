@@ -7,13 +7,13 @@
     box-sizing: border-box;
 }
 
-/*-------------------------------BODY-------------------------------------*/
+/*----------------------------------------BODY--------------------------------------------*/
 
 body {
     font-family: Helvetica Neue;
 }
 
-/*----------------------------HEADER--------------------------*/
+/*---------------------------------------HEADER-----------------------------------------*/
 header {
     backgrolor: rgb(82, 182, 212);
 /*----------debug-------------*/
@@ -31,7 +31,7 @@ header {
     flex-direction: row;
 }
 
-/*----------------------------HEADER ELEMENTS------------------------*/
+/*-----------------------------------HEADER ELEMENTS-----------------------------------*/
 .header1 {
     boer: 2px black dashed;
 /*------------debug---------------*/
@@ -78,7 +78,17 @@ header {
     padding: 10px
 }
 
-/*--------------------------jumbotron---------------------------------------*/
+/*--------------------------------jumbotron-----------------------------------*/
+
+.header-row {
+    margin: 0 auto;
+    padding: 20px 20%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .lilla-section {
     background-color: rgb(192, 75, 139);
 /*------------------debug------------------*/
@@ -87,8 +97,6 @@ header {
     flex-direction: column;
     font-size: 1.2rem;
     padding: 20px;
-    width: 800px;
-    
 }
 
 .lilla-section h2 {
@@ -101,16 +109,27 @@ header {
     padding-bottom: 20px;
 }
 
+.lilla-section2 {
+    backgrolor: rgb(192, 75, 139);
+/*------------------debug------------------*/
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
 .first-button {
+    display:flex;
     padding: 10px;
     border-radius: 40px;
     text-decoration: none;
     color: black;
     background-color: white;
     text-align: center;
+    vertical-align: middle;
 }
 
 .second-button {
+    display:flex;
     padding: 10px;
     border-radius: 40px;
     color: white;
@@ -118,15 +137,15 @@ header {
     background-color: rgb(18, 30, 34);
     text-align: center;
 }
-/*------------------------------END HEADER------------------------------------*/
+/*--------------------------------------END HEADER------------------------------------*/
 
 
 
 
 
 
-/*------------------------------MAIN----------------------------------------*/
-/*----------------------------SECTIONS--------------------------*/
+/*----------------------------------------MAIN-------------------------------------------*/
+/*--------------------------------------SECTIONS-----------------------------------------*/
 .row {
     margin: 0 auto;
     padding: 20px 20%;
@@ -150,7 +169,7 @@ header {
 
 /*--------------------------colored sections-----------------------*/
 .pink-section {
-    background-color: rgb(250, 143, 161);
+    backgrolor: rgb(250, 143, 161);
 /*-------------debug--------------*/
     display:flex;
     flex-direction: column;
@@ -159,13 +178,13 @@ header {
     padding: 20px;
 }
 .blue-section {
-    background-color: rgb(49, 49, 255);
+    backgrolor: rgb(49, 49, 255);
 /*-------------debug--------------*/
     display:flex;
 }
 
 .green-section {
-    background-color: rgb(35, 104, 56);
+    backgrolor: rgb(35, 104, 56);
 /*-------------debug--------------*/
     display:flex;
     flex-direction: column;
@@ -175,7 +194,7 @@ header {
     padding: 20px;
 }
 
-/*-----------------------------section's contents-----------------------------*/
+/*-------------------------section's contents------------------------*/
 .blue-section img {
     width: 100%;
 }
@@ -186,7 +205,7 @@ header {
 
 .green-section h3 {
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .green-section a {
@@ -197,19 +216,25 @@ header {
     text-decoration: none;
     background-color: rgb(87, 90, 250);
 }
-/*--------------------------------END MAIN----------------------------------*/
+
+.green-section h3 {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   background-position: top center;
+}
+/*--------------------------------------END MAIN--------------------------------------*/
 
 
 
 
 
-/*---------------------------------FOOTER------------------------------------*/
-/*--------------------------1rst FOOTER--------------------------*/
+/*--------------------------------------FOOTER------------------------------------------*/
+/*----------------------------------1rst FOOTER-----------------------------------------*/
 .row-footer {
     margin: 0 auto;
-    flex-direction: row;
     display: flex;
-    padding: 7px 20% 20px;
+    padding: 20px 20% 20px;
     min-height: 100px;
     border-bottom: 2px white;
     
@@ -220,30 +245,53 @@ header {
 }
 
 /*--------------------------1rstfooter sections--------------------------*/
-.col {
-    border: 2px black dashed;
-/*------------debug---------------*/
+.column {
+    boer: 2px black dashed;
+    backgrolor: rgb(201, 114, 128);
+/*--------------------debug--------------------*/
     display: flex;
     min-height: 300px;
     width: calc(100% / 5 + 12%);
+    flex-direction: column;
 }
 
-.col2 {
+.column2 {
+    backgrolor: rgb(40, 190, 216);
+    boer: 2px white dashed;
+/*--------------------debug------------------*/
     display: flex;
     min-height: 300px;
-    border: 2px white dashed;
+    
     width: calc(100% / 5 - 3%);
-}
-
-.pink {
-    background-color: rgb(201, 114, 128);
+    flex-direction: column;
 }
 
 .light-blue {
-    background-color: rgb(40, 190, 216);
+    
 }
 
-/*--------------------------2nd FOOTER--------------------------*/
+/*------------------------1rst footer attributes---------------------*/
+.column h2 {
+    color: rgb(87, 90, 250);
+    padding-bottom: 10px;
+}
+
+.column p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.column2 h4 {
+    color: rgb(87, 90, 250);
+    padding-bottom: 10px;
+}
+
+.column2 p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+/*-------------------------------------2nd FOOTER----------------------------------------*/
 .row-footer2 {
     display: flex;
     margin: 0 auto;
@@ -256,7 +304,7 @@ header {
     background-color: rgb(18, 30, 34);
 }
 
-/*--------------------------2nd footer sections--------------------------*/
+/*----------------------2nd footer sections-----------------------*/
 .last-thing {
     backgrolor: aquamarine;
 /*-------------debug------------*/
